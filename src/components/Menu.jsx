@@ -29,7 +29,7 @@ function Menu({ selected, setSelected }) {
                         <div
                         className={ `${ selected === ind  ? "bg-blue-900" : "" } flex text-white items-center justify-center md:justify-start gap-x-4 gap-y-4 cursor-pointer p-2 rounded-sm` }
                         onClick={ () => selectMenu(ind) }>
-                        <img src={ data.icon } alt={ data.title } className="w-5 h-5 text-red-800" />
+                        <img src={ data.icon } alt={ data.title } className="w-10 h-8 md:w-6 md:h-6 text-red-800" />
                         <span className=" hidden md:flex">{ data.title }</span>
                     </div>
                     ))}

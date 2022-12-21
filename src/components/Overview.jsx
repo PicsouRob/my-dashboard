@@ -41,7 +41,7 @@ function Overview() {
             <div className="pt-10 text-white grid gap-8 grid-cols-1 md:grid-cols-3">
                 <div className="md:col-span-1 gap-y-5 flex flex-col justify-between">
                     <img src="/images/creditcard.png" alt="" className="" />
-                    <div className="bg-primary space-y-5 rounded-lg p-4">
+                    <div className="flex-1 flex flex-col justify-between bg-primary space-y-5 rounded-lg p-4">
                         <h1 className="font-bold text-xl">My Portfolio</h1>
                         { overviewPortfolio.map((data, index) => (
                             <div key={index} className="">
