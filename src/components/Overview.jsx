@@ -11,20 +11,20 @@ function Overview() {
     return (
         <div>
             <Header text="Dashboard" />
-            <div className="pt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
+            <div className="pt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 md:gap-5">
                 { dashboard.map((data, index) => (
                     <div key={index} className="bg-primary p-3 rounded-lg space-y-3">
                         <div className="flex items-center justify-between text-white">
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-2">
                                 <div className="p-2 bg-gray-800 rounded-lg">
                                     <img src={data.icon} alt={data.title} className="w-5 h-5" />
                                 </div>
-                                <div className="leading-5 tracking-normal">
+                                <div className="leading-4 tracking-normal">
                                     <h2 className="text-[14px] font-semibold">{ data.title }</h2>
                                     <span className="text-gray-600 text-[12px]">{ data.subTitile.toUpperCase() }</span>
                                 </div>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-green-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 text-green-400">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
                             </svg>
                         </div>
@@ -114,7 +114,7 @@ function Overview() {
                                 <span className="text-[12px]">View More</span>
                             </div>
                         </div>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-wrap items-center justify-between gap-5">
                             <div className="space-y-2 text-[13px]">
                                 <span className="text-gray-500">Coin</span>
                                 <div className="flex items-center gap-2">
