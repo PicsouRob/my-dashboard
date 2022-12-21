@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+import Dashboard from './components/Dashboard';
+import Menu from './components/Menu';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [ selected, setSelected ] = useState(0);
+    
+    return (
+        <div className="relative grid grid-cols-5">
+            <div className='col-span-1 bg-primary'>
+                <Menu selected={selected} setSelected={setSelected} />  
+            </div>
+            <div className='col-span-4 bg-gray-800 min-h-screen'>
+                <Dashboard selected={selected} />
+            </div>
+        </div>
+    );
 }
 
 export default App;

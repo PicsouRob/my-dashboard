@@ -3,6 +3,9 @@ import Chart from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 
 function LineChart() {
+    const mixedChart = new Chart({});
+    console.log(mixedChart);
+    
     const data = {
         datasets: [ {
             type: 'line',
@@ -25,5 +28,9 @@ function LineChart() {
         </div>  
     );
 }
+
+// git remote add origin https://github.com/PicsouRob/dashboard.git
+// git branch -M main
+// git push -u origin main
 
 export default LineChart;
