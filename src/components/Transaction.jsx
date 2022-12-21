@@ -5,7 +5,7 @@ import Header from './Header';
 function Transaction() {
     return (
         <div className='flex flex-col'>
-            <Header text="Mail Box" />
+            <Header text="Transaction" />
             <div className="flex-1 h-full grid place-items-center">
                 <AnimateLogo logo="/icons/transaction.svg" text="transaction" />
             </div>
