@@ -86,10 +86,10 @@ function Overview() {
                         </div>
                         <div className="flex items-center gap-4 justify-between">
                             <div className="">
-                                <select name="" id="" className="bg-transparent text-[11px]">
-                                    <option selected value="USD" className="">Bitcoin/BTC</option>
-                                    <option value="CAN" className="">Litecoin/LTC</option>
-                                    <option value="EURO" className="">Ethereum/ETH</option>
+                                <select name="" id="" className="bg-transparent text-[11px]" onSelect={(e) => setChartAmount(e.target.value)}>
+                                    <option selected value="35,352.02" className="">Bitcoin/BTC</option>
+                                    <option value="24,352.02" className="">Litecoin/LTC</option>
+                                    <option value="45,352.02" className="">Ethereum/ETH</option>
                                 </select>
                                 <h2>{ chartAmount }</h2>
                             </div>

@@ -1,6 +1,4 @@
 import React from 'react';
-import { dashboard } from '../helpers';
-import Header from './Header';
 import Overview from './Overview';
 import Charts from './Charts';
 import Mailbox from './Mailbox';
