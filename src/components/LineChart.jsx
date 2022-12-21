@@ -3,8 +3,8 @@ import Chart from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 
 function LineChart() {
-    const mixedChart = new Chart({});
-    console.log(mixedChart);
+    // const mixedChart = new Chart({});
+    // console.log(mixedChart);
     
     const data = {
         datasets: [ {
